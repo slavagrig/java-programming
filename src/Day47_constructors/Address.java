@@ -7,6 +7,16 @@ public class Address {
     private String zipCode;
     private String country = "USA";
 
+    //constructor
+    public Address () {
+        System.out.println("Address constructor");
+        street = "123 Park Road Street";
+        city = "Alexandria";
+        state ="VA";
+        zipCode = "22302";
+
+    }
+
     public String getStreet() {
         return street;
     }
@@ -51,5 +61,5 @@ public class Address {
     public String toString() {
         return street +  ", " + city + ", " + state + " " + zipCode;
     }
-    // new1
+
 }
